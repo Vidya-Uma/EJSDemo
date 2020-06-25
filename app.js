@@ -27,6 +27,10 @@ app.get("/post", function(req, res){
     res.render("posts", {posts:posts});
 });
 
+app.get('/*', function(req, res){
+   res.redirect('/');
+});
+
 app.listen(3000, function(req, res){
    console.log("server started");
 });
