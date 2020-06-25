@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h1>Your from post file</h1>
+
+<% for(var i=0; i<posts.length; i++) {%>
+    <li><%= posts[i].title %> - <strong><%= posts[i].authour %></strong></li>
+<% } %>
+
+<% posts.forEach(function(post){ %>
+    <li>
+        <%= post.title %> - <strong><%= post.authour %></strong>
+    </li>
+
+<% }) %>
+<%- include('partials/header') %>
